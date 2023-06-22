@@ -21,5 +21,8 @@ class TestCalc:
         with pytest.raises(ZeroDivisionError):
             self.calc.division(self, 1, 0)
 
+    def test_division(self):
+        assert self.calc.division(self, 121, 11) == 11
+
     def teardown(self):
         print('Running method Teardown')
